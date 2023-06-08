@@ -1,3 +1,7 @@
+:root {
+    --heading-color: #320C2D;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,14 +17,14 @@ header {
     padding: 20px;
     font-family: 'Times';
     font-size: 22px;
-    background-color:  #404040;
+    background-color: var(--heading-color);
     color: lightblue;
 }
 
 header h1 {
     display: inline-block;
     background-color: lightblue;
-    color: #404040;
+    color: var(--heading-color);
     transition: 2s;
     scroll-behavior: smooth;
 }
