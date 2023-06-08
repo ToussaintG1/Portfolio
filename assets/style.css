@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Made the background color for the body light blue */
+body {
+    background-color: lightblue;
+}
+
+header {
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    background-color:  #404040;
+    color: lightblue;
+}
+
+header h1 {
+    display: inline-block;
+    background-color: lightblue;
+    color: #404040;
+    transition: 2s;
+    scroll-behavior: smooth;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+/* no bullet points or style type on the ul list */
+header nav ul {
+    list-style-type: none;
+}
+/* styled the link */
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+/* all a tags have color lightblue */
+a {
+    color: lightblue;
+    text-decoration: none;
+    transition: 2s;
+    scroll-behavior: smooth;
+    
+}
+/* hovering over the link will add underline */
+a:hover {
+    text-decoration: underline;
+    transition-duration: 1s;
+    margin-top: 20px;
+   
+
+    }
+
+/* added background image after header */
+.background {
+    display: flex;
+    position: relative;
+    height: 175px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./Plain\ Banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.background h3 {
+    position: absolute;
+    color: lightblue;
+    font-size: 35px;
+    height: 5%;
+    margin-left: 60%;
+    align-items: end;
+    margin-top: 6.5%;
+  
+}
+
