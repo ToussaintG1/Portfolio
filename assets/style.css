@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    padding: 20px;
+    padding: 20px 20px 20px 0px;
     font-family: 'Times';
     font-size: 22px;
     background-color: var(--heading-color);
@@ -27,6 +27,8 @@ header h1 {
     color: var(--heading-color);
     transition: 2s;
     scroll-behavior: smooth;
+    padding-left: 45px;
+    padding-right: 5px;
 }
 
 header nav {
@@ -99,3 +101,27 @@ a:hover::after {
   
 }
 
+.row {
+    display: flex;
+}
+.left-column {
+    padding-right: 12px;
+    border-right: 5px var(--heading-color) solid ;
+    height: 200px;
+    
+
+}
+
+.left-column h1 {
+   margin-left: 134px;
+   font-size: 50px;
+}
+
+.left-column span {
+    margin-left: 65px;
+}
+
+.column p {
+    margin-top: 5px;
+    margin-left: 30px;
+}
