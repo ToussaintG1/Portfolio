@@ -110,32 +110,72 @@ a:hover::after {
     align-items: end;
     width: 10%;
     
-    transition:left 3s;
+    transition:left 1s;
 }
 
 .background img:hover {
     left: 70%;
 }
 
+            /* About Section */
+
 .row {
     display: flex;
 }
-.left-column {
+.about-column {
     padding-right: 12px;
     border-right: 5px var(--heading-color) solid ;
-    height: 200px;
+    height: 250px;
     
 
 }
 
-.left-column h1 {
+.about-column h1 {
    margin-left: 134px;
    font-size: 50px;
 }
 
-.left-column span {
+.about-column span {
     margin-left: 65px;
 }
+
+.column p {
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: 18px;
+    width: 1300px;
+}
+
+        /* Work Section */
+
+.work-column {
+    padding-right: 12px;
+    border-right: 5px var(--heading-color) solid ;
+    height: 800px;
+    
+
+}
+
+.work-column h1 {
+   margin-left: 146px;
+   font-size: 50px;
+}
+    /* Entered first portfolio work image */
+.work img {
+    margin-top: 5px;
+    height: 500px;
+    width: 1300px;
+    margin-left: 35px;
+    border: 5px var(--heading-color) solid;
+
+}
+    /* When you hover on all images it will highlight */
+.work img:hover {
+    opacity: 0.7;
+
+
+}
+
 
 .column p {
     margin-top: 5px;
