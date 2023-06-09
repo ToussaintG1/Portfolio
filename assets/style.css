@@ -12,7 +12,7 @@
 body {
     background-color: lightblue;
 }
-
+/* Styling for the header */
 header {
     padding: 20px 20px 20px 0px;
     font-family: 'Times';
@@ -30,7 +30,7 @@ header h1 {
     padding-left: 45px;
     padding-right: 5px;
 }
-
+/* navbar styling */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -48,7 +48,7 @@ header nav ul li {
     margin-left: 25px;
 }
 /* all a tags have color lightblue */
-a {
+header a{
     position: relative;
     color: lightblue;
     text-decoration: none;
@@ -59,7 +59,7 @@ a {
 }
 
 /* Added underline to a tags without hover */
-a::after {
+header a::after {
     content: "";
     position: absolute;
     text-decoration: underline;
@@ -117,9 +117,9 @@ a:hover::after {
     left: 70%;
 }
 
-            /* About Section */
+            /* --------------- About Section --------------- */
 
-.row {
+.about-row {
     display: flex;
 }
 .about-column {
@@ -146,7 +146,14 @@ a:hover::after {
     width: 1300px;
 }
 
-        /* Work Section */
+        /* --------------- Work Section --------------- */
+
+.work-row {
+    display: flex;
+    margin-top: 10px;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
 
 .work-column {
     padding-right: 12px;
@@ -161,7 +168,7 @@ a:hover::after {
    font-size: 50px;
 }
     /* Entered first portfolio work image */
-.work img {
+.work .img1 {
     margin-top: 5px;
     height: 500px;
     width: 1300px;
@@ -169,16 +176,83 @@ a:hover::after {
     border: 5px var(--heading-color) solid;
 
 }
-    /* When you hover on all images it will highlight */
-.work img:hover {
-    opacity: 0.7;
-
+.work .img2{
+    float: left;
+    width: 50%;
+    margin-top: 5px;
+    height: 125px;
+    width: 650px;
+    margin-left: 35px;
+    border: 5px var(--heading-color) solid;
 
 }
 
+    /* When you hover on all images it will highlight */
+.work img:hover {
+    opacity: 0.7;
+    
+
+
+}
 
 .column p {
     margin-top: 5px;
     margin-left: 30px;
     font-size: 18px;
 }
+
+
+    /* --------------- Contact Me Section --------------- */
+
+.contact-row {
+    display: flex;
+    margin-top: 50px;  
+}
+
+.contact-column {
+    padding-right: 12px;
+    border-right: 5px var(--heading-color) solid ;
+    height: 250px;  
+}
+
+.contact-column h1 {
+    color: var(--heading-color);
+    margin-left: 100px;
+    font-size: 50px;
+}
+
+.contact-column span {
+    margin-left: 100px;
+}
+.contact-info {
+    display: flex;
+}
+
+.contact-info h3{
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 100px;
+    color: var(--heading-color);
+}
+
+    /* Added underline to contact info without hover */
+    
+.contact-info h3::after {
+    content: "";
+    position: absolute;
+    text-decoration: underline;
+    height: 3px;
+    background-color: var(--heading-color);
+    transition-duration: 1s;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: 1s;
+}
+
+/* hovering on contact info will add underline */
+.contact-info h3:hover::after {
+    width: 100%;
+}
+
+    /* --------------- Resume --------------- */
