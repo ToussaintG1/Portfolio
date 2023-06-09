@@ -95,10 +95,26 @@ a:hover::after {
     color: lightblue;
     font-size: 35px;
     height: 5%;
-    margin-left: 60%;
+    margin-left: 45%;
     align-items: end;
     margin-top: 6.5%;
   
+}
+
+.background img {
+    position: absolute;
+    left: 73%;
+    margin-top: 2px;
+    height: 170px;
+    font-size: 35px;
+    align-items: end;
+    width: 10%;
+    
+    transition:left 3s;
+}
+
+.background img:hover {
+    left: 70%;
 }
 
 .row {
@@ -124,4 +140,5 @@ a:hover::after {
 .column p {
     margin-top: 5px;
     margin-left: 30px;
+    font-size: 18px;
 }
