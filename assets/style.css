@@ -109,7 +109,6 @@ a:hover::after {
     font-size: 35px;
     align-items: end;
     width: 10%;
-    
     transition:left 1s;
 }
 
@@ -279,14 +278,13 @@ a:hover::after {
 .contact-row {
     display: flex;
     margin-top: 50px;  
-    padding-bottom: 20px;
 }
 
 .contact-column {
     padding-right: 12px;
     border-right: 5px var(--heading-color) solid ;
     height: 200px;  
-    
+    padding: 10px;
 }
 
 .contact-column h1 {
@@ -337,3 +335,288 @@ a:hover::after {
 }
 
     /* --------------- Resume --------------- */
+
+
+    /* Phone compatibility */
+
+   
+
+  
+  /* If the screen size is 600px wide or less, the following changes will be made */
+  @media screen and (max-width: 600px) {
+    * {
+     /* font-size: 30px; */
+    }
+
+    header {
+        padding: 20px 20px 20px 0px;
+        font-family: 'Times';
+        font-size: 22px;
+        background-color: var(--heading-color);
+        color: lightblue;
+        max-width: 100%;
+    }
+    
+    header h1 {
+        display: inline-block;
+        background-color: lightblue;
+        color: var(--heading-color);
+        transition: 2s;
+        scroll-behavior: smooth;
+        padding-left: 45px;
+        padding-right: 5px;
+        max-width: 100%;
+    }
+    /* navbar styling */
+    header nav {
+        padding-top: 15px;
+        margin-right: 20px;
+        float: right;
+        font-family: 'Times';
+        font-size: 22px;
+        max-width: 100%;
+    }
+    /* no bullet points or style type on the ul list */
+    header nav ul {
+        list-style-type: none;
+    }
+    /* styled the link */
+    header nav ul li {
+        display: inline-block;
+        margin-left: 25px;
+    }
+    /* all a tags have color lightblue */
+    header a{
+        position: relative;
+        color: lightblue;
+        text-decoration: none;
+        transition: 2s;
+        scroll-behavior: smooth;
+        padding: 0 10px;
+        max-width: 100%;
+        
+    }
+    
+    /* Added underline to a tags without hover */
+    header a::after {
+        content: "";
+        position: absolute;
+        text-decoration: underline;
+        height: 3px;
+        background-color: lightblue;
+        transition-duration: 1s;
+        width: 0;
+        left: 0;
+        bottom: -8px;
+        transition: 1s;
+        max-width: 100%;
+    }
+    
+    /* hovering on a tags will add underline */
+    a:hover::after {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    /* added background image after header */
+    .background {
+        display: flex;
+        position: relative;
+        height: 175px;
+        width: 100%;
+        margin-bottom: 25px;
+        background-image: url("./Plain\ Banner.jpg");
+        background-size: cover;
+        background-position: center;
+        max-width: 100%;
+    }
+    
+    /* Placement of "Welcome to My Portfolio" */
+    .background h3 {
+        position: absolute;
+        color: lightblue;
+        font-size: 35px;
+        height: 5%;
+        margin-left: 45%;
+        align-items: end;
+        margin-top: 6.5%;
+        max-width: 100%;
+      
+    }
+    
+    .background img {
+        position: absolute;
+        left: 73%;
+        margin-top: 2px;
+        height: 170px;
+        font-size: 35px;
+        align-items: end;
+        width: 10%;
+        transition:left 1s;
+        max-width: 100%;
+    }
+    
+    .background img:hover {
+        left: 70%;
+        max-width: 100%;
+    }
+
+
+    .about-row {
+        display: flex;
+        max-width: 100%;
+    }
+    .about-column {
+        padding-right: 12px;
+        border-bottom: 5px var(--heading-color) solid ;
+        border-right: none;
+        height: 250px;
+        max-width: 100%;
+    }
+    
+    .about-column h1 {
+       margin-left: 0px;
+       font-size: 50px;
+       max-width: 100%;
+    }
+    
+    .about-column span {
+        margin-left: 60px;
+        max-width: 100%;
+    }
+    
+    .column p {
+        margin-top: 5px;
+        margin-left: 10px;
+        font-size: 14px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .work-row {
+        display: flex;
+        margin-top: 10px;
+        padding-top: 15px;
+        box-sizing: border-box;
+        max-width: fit-content;
+    }
+    
+    .work-column {
+        padding-right: 12px;
+        border-right: 5px var(--heading-color) solid ;
+        height: 800px;
+        max-width: fit-content;
+    }
+    
+    .work-column h1 {
+       margin-left: 146px;
+       font-size: 50px;
+       max-width: fit-content;
+    }
+    
+    
+        /* Entered first portfolio work image */
+    .work .img1 {
+        margin-top: 5px;
+        height: 500px;
+        width: 1315px;
+        margin-left: 35px;
+        border: 5px var(--heading-color) solid;
+        max-width: fit-content;
+    }
+    .work .img2{
+        float: left;
+        width: 50%;
+        margin-top: 5px;
+        height: 125px;
+        width: 650px;
+        margin-left: 35px;
+        border: 5px var(--heading-color) solid;
+        max-width: fit-content;
+    }
+    .work .img4{
+        float: left;
+        width: 50%;
+        margin-top: 5px;
+        height: 125px;
+        width: 650px;
+        margin-left: 5px;
+        border: 5px var(--heading-color) solid;
+        max-width: fit-content;
+    }
+    
+        /* When you hover on all images it will highlight */
+    .work img:hover {
+       opacity: 0.7;
+    }
+    
+    .text-box1 {
+          /* use left and bottom to move text box over the image and create an overlap effect */
+        position: relative;
+        position: absolute;
+        bottom: -75px;
+        left: 325px;
+        background-color: var(--heading-color);
+        color: lightblue;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 2px;
+        max-width: fit-content;
+    }
+    .text-box2 {
+          /* use left and bottom to move text box over the image and create an overlap effect */
+        position: relative;
+        position: absolute;
+        bottom: -250px;
+        left: 325px;
+        background-color: var(--heading-color);
+        color: lightblue;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 2px;
+    }
+    .text-box3 {
+          /* use left and bottom to move text box over the image and create an overlap effect */
+        position: relative;
+        position: absolute;
+        bottom: -250px;
+        left: 990px;
+        background-color: var(--heading-color);
+        color: lightblue;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 2px;
+    }
+    .text-box4 {
+         /* use left and bottom to move text box over the image and create an overlap effect */
+        position: relative;
+        position: absolute;
+        bottom: -390px;
+        left: 325px;
+        background-color: var(--heading-color);
+        color: lightblue;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 2px;
+        max-width: fit-content;
+    }
+    .text-box5 {
+          /* use left and bottom to move text box over the image and create an overlap effect */
+        position: relative;
+        position: absolute;
+        bottom: -390px;
+        left: 990px;
+        background-color: var(--heading-color);
+        color: lightblue;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 2px;
+    }
+    
+    
+    
+    .column p {
+        margin-top: 5px;
+        margin-left: 30px;
+        font-size: 18px;
+    }
+  }
